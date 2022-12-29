@@ -52,7 +52,7 @@ def check_win(gameboard):
     symbol = gameboard[0][0]
     win = True
     for i in range(1, size):
-        if gameboard[i][i + 1] != symbol or symbol == "-":
+        if gameboard[i][i] != symbol or symbol == "-":
             win = False
             break
     if win == True:
